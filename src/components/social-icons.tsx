@@ -71,7 +71,7 @@ export function SocialLink({
 }) {
   return (
     <a target="_blank" rel="noopener noreferrer" className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-[#ceb332] transition group-hover:fill-[#b69129] " />
+      <Icon className="h-6 w-6 fill-gray-700 transition group-hover:fill-gray-900 " />
     </a>
   );
 }
