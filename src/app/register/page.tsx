@@ -1,12 +1,15 @@
 'use client'
 import { Button } from "@/components/Button";
 import { Container } from "@/components/Container";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import { useState } from "react";
 export default function Register() {
   let [name, setName ] = useState('Someone great')
   
   return (
     <>
+    <Header />
       <section
         id="speakers"
         aria-labelledby="speakers-title"
@@ -624,6 +627,8 @@ export default function Register() {
           </div>
         </Container>
       </section>
+
+      <Footer />
     </>
   );
 }

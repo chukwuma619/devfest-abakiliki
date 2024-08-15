@@ -24,6 +24,8 @@ import {
   SocialLink,
   XIcon,
 } from "@/components/social-icons";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const sponsors = [
   { name: "Transistor", logo: logoTransistor },
@@ -36,22 +38,7 @@ const sponsors = [
 export default function Example() {
   return (
     <>
-      <header className="relative z-50 flex-none lg:pt-11">
-        <Container className="flex flex-wrap items-center justify-center sm:justify-between lg:flex-nowrap">
-          <div className="mt-10 lg:mt-0 lg:grow lg:basis-0">
-            <Image
-              src={"/images/DF24-Logo.png"}
-              height={51}
-              alt=""
-              width={176}
-            />
-          </div>
-
-          <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-            <Button href="#">Get your tickets</Button>
-          </div>
-        </Container>
-      </header>
+     <Header />
 
       <div className="relative py-20 sm:pb-24 sm:pt-36">
         <Container className="relative">
@@ -166,39 +153,7 @@ export default function Example() {
         </Container>
       </section>
 
-      <footer className="flex-none py-16">
-        <Container className="flex flex-col items-center justify-between md:flex-row">
-          <Image src={"/images/DF24-Logo.png"} height={51} alt="" width={176} />
-          <div>
-            <div className="mt-6 flex items-center justify-center md:justify-end gap-6">
-              <SocialLink
-                href="https://twitter.com/"
-                aria-label="Follow on X"
-                icon={XIcon}
-              />
-              <SocialLink
-                href="https://www.instagram.com/"
-                aria-label="Follow on Instagram"
-                icon={InstagramIcon}
-              />
-              <SocialLink
-                href="https://github.com/"
-                aria-label="Follow on GitHub"
-                icon={GitHubIcon}
-              />
-              <SocialLink
-                href="https://www.linkedin.com/in/"
-                aria-label="Follow on LinkedIn"
-                icon={LinkedInIcon}
-              />
-            </div>
-            <p className="mt-4 text-base text-slate-500">
-              Copyright &copy; {new Date().getFullYear()} Devfest Abakaliki. All
-              rights reserved.
-            </p>
-          </div>
-        </Container>
-      </footer>
+      <Footer />
     </>
   );
 }
